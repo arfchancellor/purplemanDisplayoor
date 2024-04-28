@@ -12,18 +12,15 @@ const frameMetadata = getFrameMetadata({
     src: `${NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1:1',
   },
-  input: {
-    text: 'Tell me a boat story',
-  },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  title: 'Arfchancellor',
+  description: 'ARF',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
+    title: 'Arfchancellor',
+    description: 'Arf',
     images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
   other: {
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>We want Purpleman.xyz</h1>
     </>
   );
 }
