@@ -1,3 +1,4 @@
+// Use client
 import { useState } from 'react';
 import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
