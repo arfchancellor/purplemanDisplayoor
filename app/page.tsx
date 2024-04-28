@@ -1,11 +1,18 @@
+import { useState } from 'react';
 import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
 
+const images = [
+  `${NEXT_PUBLIC_URL}/8nu7so.jpg`,
+  `${NEXT_PUBLIC_URL}/8npha5.jpg`,
+  `${NEXT_PUBLIC_URL}/8nh1ya.jpg`,
+];
+
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Show me Purpleman',
+      label: 'Show Purpleman Fact',
     },
   ],
   image: {
@@ -29,9 +36,20 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  // State to manage the currently displayed image
+  const [currentImage, setCurrentImage] = useState(images[0]);
+
+  // Function to select a random image from the list
+  const handleButtonClick = () => {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setCurrentImage(images[randomIndex]);
+  };
+
   return (
     <>
-      <h1>We want Purpleman.xyz</h1>
+      <h1>zizzamia.xyz</h1>
+      <button onClick={handleButtonClick}>Show me Purpleman</button>
+      <img src={currentImage} alt="Displayed Image" />
     </>
   );
 }
