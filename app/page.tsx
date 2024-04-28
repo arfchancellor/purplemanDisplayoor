@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/public/purpleman/baseimage.jpeg`,
+    src: `${NEXT_PUBLIC_URL}/purpleman/baseimage.jpeg`,
     aspectRatio: '1:1',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
