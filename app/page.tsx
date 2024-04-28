@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/Public/purpleman.base.jpeg`,
+    src: `${NEXT_PUBLIC_URL}/purpleman/baseImage.jpeg`,
     aspectRatio: '1:1',
   },
   // The input object has been removed from here.
