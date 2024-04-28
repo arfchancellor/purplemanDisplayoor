@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'zizzamia.xyz',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/Public/purpleman.baseImage.jpeg`],
+    images: [`${NEXT_PUBLIC_URL}/purpleman/baseImage.jpeg`],
   },
   other: {
     ...frameMetadata,
